@@ -48,9 +48,14 @@ function test() {
 
 /* 날짜 칸누르면 해당 날짜 반환해주는 함수 시작-전 쌤 */
 function clickDay(idNum) {
-    var dayCell = document.getElementById("day" + idNum);
-    if(dayCell.innerHTML != "_") //날짜가 있는 칸만 날짜 반환하기
-        alert(nowY+"년 "+nowM+"월 "+dayCell.innerHTML+"일");
+   var dayCell = document.getElementById("day" + idNum);
+   if(dayCell.innerHTML != "_") //날짜가 있는 칸만 날짜 반환하기
+        //alert(nowY+"년 "+nowM+"월 "+dayCell.innerHTML+"일");
+	
+	
+	document.getElementById("saveC").value="";
+	var sc=document.getElementById("sc");
+	sc.innerHTML=nowY+"년"+nowM+"월"+dayCell.innerHTML+"일";
 }
 /* 날짜 칸누르면 해당 날짜 반환해주는 함수 끝-전 쌤 */
 

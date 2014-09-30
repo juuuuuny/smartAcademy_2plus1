@@ -5,12 +5,13 @@
     <meta charset="utf-8" />
     <title>달력</title>
     <script src="cal_js.js"></script>
+	    <script src="cal.js"></script>
     <link rel="stylesheet" type="text/css" href="cal_css.css"/>
        
     </link>
 </head>
 <body onload="test()">
-    <div>
+	<div>
         <table>
             <tr>
                 <td width="10" onclick="prevMonth()" class="btn">◀</td><!--이전달 이동버튼 (전 쌤)-->
@@ -21,7 +22,19 @@
             <tr>
                 <td id="aaa" colspan="4"></td> <!--날짜 뿌려주는 표 (전 쌤) -->
             </tr>
+		
         </table>
     </div>
+	<div id="sc">
+	
+	</div>
+	<div>
+
+	오늘의 할일<br/>
+	<textarea name="feedback" rows="10" cols="60" id='saveC' value=""></textarea>
+	<input type='button'  value='저장하기' onclick='save_f()'></input>
+	<input type='button' value='불러오기' onclick='open_f()'></input>
+
+	</div>
 </body>
 </html>
