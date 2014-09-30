@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>달력</title>
+    <script src="cal_js.js"></script>
+    <link rel="stylesheet" type="text/css" href="cal_css.css"/>
+       
+    </link>
+</head>
+<body onload="test()">
+    <div>
+        <table>
+            <tr>
+                <td width="10" onclick="prevMonth()" class="btn">◀</td><!--이전달 이동버튼 (전 쌤)-->
+                <td id="yearCell"></td><!-- 년도(전 쌤)  -->
+                <td id="monthCell"></td><!-- 월(전 쌤)  -->
+                <td width="10" onclick="nextMonth()" class="btn">▶</td><!--다음달 이동버튼 (전 쌤)-->
+            </tr>
+            <tr>
+                <td id="aaa" colspan="4"></td> <!--날짜 뿌려주는 표 (전 쌤) -->
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+﻿div {           
+    margin:3% 3% 3% 3%;           
+}
+table {
+    width:100%;
+    text-align:center;
+    font-family:'Malgun Gothic'
+}
+#monthCell {  /* 달 */
+    font-size:30px;
+    font-family:'Malgun Gothic';
+    text-align:right;
+}
+#yearCell { /* 년 */
+        text-align:left;
+}
+td.btn {
+    cursor:pointer; /* 버튼 속성을 가진 요소는 손가락 모양으로 변경 (전 쌤)*/
+}
